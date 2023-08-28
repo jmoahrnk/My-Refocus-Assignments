@@ -1,0 +1,19 @@
+@use 'variables';
+
+@mixin triagle_left_right(){
+    width: 0;
+    height: 0;
+    border-top: variables.$triangle-borders transparent;
+    border-bottom: variables.$triangle-borders transparent;
+}
+
+@mixin triagle_up_down(){
+    width: 0;
+    height: 0;
+    border-left: variables.$triangle-borders transparent;
+    border-right: variables.$triangle-borders transparent;
+}
+
+@mixin ellipse(){
+    border-radius: 50%;
+}

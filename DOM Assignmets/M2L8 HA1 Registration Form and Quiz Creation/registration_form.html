@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+    <form name="registration" id="registration-form">
+        <h1>Signup</h1>
+        <div class="form-control">
+            <div id="error-firstName" class="error"></div>
+            <div>
+                <label> First Name </label>
+                <input type="text" name="firstName">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-middleName" class="error"></div>
+            <div>
+                <label> Middle Name </label>
+                <input type="text" name="middleName">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-lastName" class="error"></div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-birthday" class="error"></div>
+            <div>
+                <label> Birthday </label>
+                <input type="date" name="birthday">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-email" class="error"></div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-region" class="error"></div>
+            <div>
+                <label> Region </label>
+                <select name="region">
+                    <option value=""></option>
+                    <option value="Region I"> Region I- Ilocos Region </option>
+                    <option value="Region II"> Region II - Cagayan Valley </option>
+                    <option value="Region III"> Region III - Central Luzon </option>
+                    <option value="Region IV-A"> Region IV-A - CALABARZON </option>
+                    <option value="MIMAROPA"> MIMAROPA Region </option>
+                    <option value="Region V"> Region V - Bicol Region</option>
+                    <option value="Region VI"> Region VI - Western Visayas</option>
+                    <option value="Region VII"> Region VII - Central Visayas</option>
+                    <option value="Region VIII"> Region VIII - Eastern Visayas</option>
+                    <option value="Region IX"> Region IX - Zamboanga Peninsula</option>
+                    <option value="Region X"> Region X - Northern Mindanao</option>
+                    <option value="Region XI"> Region XI - Davao Region</option>
+                    <option value="Region XII"> Region XII - SOCCSKSARGEN </option>
+                    <option value="Region XIII"> Region XIII - Caraga</option>
+                    <option value="NCR"> NCR </option>
+                    <option value="CAR"> CAR </option>
+                    <option value="BARMM"> BARMM - Bangsamoro Autnomous Region in Muslim Mindanao </option>
+                </select>
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-province" class="error"></div>
+            <div>
+                <label>Province</label>
+                <input type="text" name="province">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-barangay" class="error"></div>
+            <div>
+                <label>Barangay</label>
+                <input type="text" name="barangay">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-street" class="error"></div>
+            <div>
+                <label>Street</label>
+                <input type="text" name="street">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-gender" class="error"></div>
+            <div>
+                Gender
+                <label>
+                    Male
+                    <input type="radio" name="gender" value="Male">
+                </label>
+                <label>
+                    Female
+                    <input type="radio" name="gender" value="Female">
+                </label>
+                <label>
+                    Other
+                    <input type="radio" name="gender" value="Other">
+                </label>
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-brand1" class="error"></div>
+            <div>
+                <label> Vaccination Brand (Dose 1) </label>
+                <select name="brand1">
+                    <option value=""> -Please choose one-</option>
+                    <option value="Pfizer-BioNTech"> Pfizer-BioNTech </option>
+                    <option value="AstraZeneca"> AstraZeneca </option>
+                    <option value="Coronavac"> Coronavac </option>
+                    <option value="Sputnik V"> Sputnik V" </option>
+                    <option value="Janssen"> Janssen</option>
+                    <option value="Covaxin"> Covaxin</option>
+                    <option value="Moderna"> Moderna</option>
+                    <option value="Sinopharm"> Sinopharm</option>
+                    <option value="Covovax"> Covovax</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-date1" class="error"></div>
+            <div>
+                <label> Date of Vaccination (Dose1) </label>
+                <input type="date" name="date1">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-site1" class="error"></div>
+            <div>
+                <label>Vaccination (Dose 1) Site</label>
+                <input type="text" name="site1">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-secondVacc" class="error"></div>
+            <div>
+                Did you already get your second vaccination?
+                <label>
+                    Yes
+                    <input type="radio" name="secondVacc" value="True" onchange="secondVaccination(this)">
+                </label>
+                <label>
+                    No
+                    <input type="radio" name="secondVacc" value="False" onchange="secondVaccination(this)">
+                </label>
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-brand2" class="error"></div>
+            <div>
+                <label> Vaccination Brand (Dose 2) </label>
+                <select name="brand2">
+                    <option value=""> -Please choose one-</option>
+                    <option value="Pfizer-BioNTech"> Pfizer-BioNTech </option>
+                    <option value="AstraZeneca"> AstraZeneca </option>
+                    <option value="Coronavac"> Coronavac </option>
+                    <option value="Sputnik V"> Sputnik V" </option>
+                    <option value="Janssen"> Janssen</option>
+                    <option value="Covaxin"> Covaxin</option>
+                    <option value="Moderna"> Moderna</option>
+                    <option value="Sinopharm"> Sinopharm</option>
+                    <option value="Covovax"> Covovax</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-site2" class="error"></div>
+            <div>
+                <label>Vaccination (Dose 2) Site</label>
+                <input type="text" name="site2">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-date2" class="error"></div>
+            <div>
+                <label> Date of Vaccination (Dose2) </label>
+                <input type="date" name="date2">
+            </div>
+        </div>
+        <div class="form-control">
+            <button type="submit" name="submitBtn"> Submit </button>
+        </div>
+    </form>
+    <form name="data" id="registration-data">
+        <div name="info"></div>
+    </form>
+</body>
+
+<script>
+    const form = document.forms.registration;
+    const firstName = form.firstName;
+    const middleName = form.middleName;
+    const lastName = form.lastName;
+    const birthday = form.birthday
+    const email = form.email;
+    const region = form.region;
+    const province = form.province;
+    const barangay = form.barangay;
+    const street = form.street;
+    const gender = form.gender;
+    const brand1 = form.brand1;
+    const date1 = form.date1;
+    const site1 = form.site1;
+    const secondVacc = form.secondVacc;
+    const brand2 = form.brand2;
+    const date2 = form.date2;
+    const site2 = form.site2;
+
+    const data = document.forms.data;
+ 
+
+    function secondVaccination(radio){
+        if(radio.value == "True"){
+            brand2.disabled = false;
+            date2.disabled = false;
+            site2.readOnly = false;
+        }
+        else{
+            brand2.disabled = true;
+            date2.disabled = true;
+            site2.readOnly = true;
+        }
+        
+    }
+
+    form.addEventListener('submit', function(){
+    data.innerHTML ="";
+    event.preventDefault(); 
+    setInfo('First Name:  ' + firstName.value);
+    setInfo('Middle Name:  ' + middleName.value);
+    setInfo('Last Name:  ' + lastName.value);
+    setInfo('Birthday:  ' + birthday.value);
+    setInfo('Email:  ' + email.value);
+    setInfo('Region:  ' + region.value);
+    setInfo('Province:  ' + province.value);
+    setInfo('Barangay:  ' + barangay.value);
+    setInfo('Street:  ' + street.value);
+    setInfo('Gender:  ' + gender.value);
+    setInfo('Brand (Dose 1):  ' + brand1.value);
+    setInfo('Date (Dose 1):  ' + date1.value);
+    setInfo('Site (Dose 1):  ' + site1.value);
+    setInfo('Second Vaccination(?):  ' + secondVacc.value);
+    setInfo('Brand (Dose 2):  ' + brand2.value);
+    setInfo('Date (Dose 2):  ' + date2.value);
+    setInfo('Site (Dose 2):  ' + site2.value);
+           
+    })
+
+    function setError(field, errorMsg){
+        field.style.borderColor ='red';
+        document.getElementById('error-' + field.name).innerText = errorMsg;
+    }
+    function setInfo(newInfo){
+        const paragraph = document.createElement('p');
+        paragraph.innerText = newInfo;
+        data.appendChild(paragraph);
+    }
+</script>
+</html>

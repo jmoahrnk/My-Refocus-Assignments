@@ -1,0 +1,61 @@
+
+.navbar{
+    height: 50px;
+    background-color: #162040;
+    padding: 0px 30px;
+}
+.refocus-logo{
+    font-family: sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.refocus-logo-tablet{
+    font-size: 40px;
+    height: 100px;
+    margin-left: 27px;
+    display: none;
+}
+p{
+    font-family: sans-serif;
+    color: white;
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width:768px) {
+    .refocus-logo-tablet{
+        display: block;
+    }
+    .refocus-logo{
+        display: none;
+    }
+    p{
+        display: block;
+    }
+    .navbar{
+        margin-top: 40px;
+        padding: 0px 60px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .refocus-logo-tablet{
+        display: none;
+    }
+    .refocus-logo{
+        display: block;
+    }
+    .navbar{
+        margin-top: 0px;
+        padding: 0px 60px;
+    }
+}

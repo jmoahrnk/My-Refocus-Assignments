@@ -1,0 +1,24 @@
+.mobile{
+display: none;
+}
+.tablet{
+display: none;
+}
+.PC{
+display: none;
+}
+@media only screen and (max-width: 688px){
+    .mobile{
+        display: initial;
+        }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    .tablet{
+        display: initial;
+        }
+}
+@media only screen and (min-width: 993px){
+    .PC{
+        display: initial;
+        }
+}

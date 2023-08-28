@@ -1,0 +1,272 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Mukta;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.ProfilePic{
+    border: 5px solid rgb(197, 105, 0);
+    border-radius: 50%;
+    height: 200px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+    gap: 20px; 
+    
+}
+.MyName{
+    padding-bottom: 30px;
+}
+.Work-Experience{
+    background-color:#170F04;
+    color:rgb(168, 136, 96);
+    padding: 10px 10px 30px 35px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -25px;
+}
+.Education{
+    background-color:#170F04;
+    color:rgb(168, 136, 96);
+    padding: 10px 10px 30px 35px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -25px;
+}
+.Certifications{
+    padding: 10px 10px 30px 0px;
+}
+.Skills{
+    padding: 10px 10px 30px 0px;
+}
+.Personal-Information{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color:#170F04;
+    background-image: url("assets/images/RightColumn.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 65px 30px 0px 30px;
+    color:rgb(168, 136, 96);
+    border-radius: 0% 200px 0% 0%;
+    font-size: calc(15px + 0.390625vw);
+}
+
+.ProfilePic-Container{
+    padding-bottom: 20px;
+}
+.Contact-Info{
+    padding-bottom: 10px;
+}
+.Languages{
+    padding-bottom: 10px;
+}
+.Hobbies{
+    padding-bottom: 10px;
+}
+.Media-Links{
+    padding-bottom: 10px;
+}
+.Reference{
+    padding-bottom: 10px;
+}
+
+.Work-Information{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-right: 30px;
+    font-size: 20px;
+    color: rgb(58, 31, 0);
+    border-radius: 20px 20px 0px 0px;
+    font-size: calc(17px + 0.390625vw);
+}
+.MyName{
+    font-size: 40px;
+    margin-left: -10px;
+}
+
+.Work-Experience{
+    display: grid;
+    grid-template-columns: 1fr .25fr;
+    grid-template-rows: 1.5fr 1fr 1fr 2fr;
+}
+.Company-Name{
+    grid-column: 1/3;
+    padding-left: 10px;
+
+}
+.Position{
+    grid-column: 1/2;
+    padding-left: 20px;
+}
+.Employment-Span{
+    grid-column: 2/3;
+    text-align: right;
+}
+.Work-Description{
+    grid-column: 1/3;
+    padding-left: 20px;
+}
+
+.Certifications{
+    display: grid;
+    grid-template-columns: 1fr .25fr;
+    grid-template-rows: 1.5fr 1.2fr 1.5fr 1.2fr 4.5fr 1.2fr 5.5fr 1.2fr 1fr;
+}
+.Platform{
+    padding-left: 10px;
+    grid-column: 1/3;
+}
+.Seminar-Name{
+    grid-column: 1/2;
+    padding-left: 20px;
+
+}
+.Seminar-Date{
+    grid-column: 2/3;
+    text-align: right;
+}
+
+.Education{
+    display: grid;
+    grid-template-columns: 1fr .25fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+}
+.University{
+    grid-column: 1/3;
+    padding-left: 10px;
+}
+.Course{
+    grid-column: 1/2;
+    padding-left: 20px;
+}
+.School-Year{    
+    grid-column: 2/3;
+    text-align: right;
+}
+
+.Skills{
+    display: grid;
+    grid-template-rows: 1.5fr 1.2fr 4fr 1.2fr 5fr;
+}
+.Skill-type{
+    padding-left: 10px;
+}
+.Skill-set{
+    padding-left: 20px;
+
+}
+
+@media only screen and (max-width: 768px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .body{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        align-items:start;
+    }
+    .content{
+        width: 100%;
+        flex-direction: column;
+        align-items:start;
+        gap: 0px;
+        padding: 0px;
+        margin: 0px;
+
+    }
+    .Personal-Information{
+        flex-direction: row;
+        background-image: none;
+        width: 100%;
+        height: 80px;
+        font-size: calc(8px + 0.390625vw);
+        gap:10px;
+        padding: 0px;
+        padding-top:5px;
+        border-radius: 0%;
+        margin-left: 0px;
+
+
+    }
+    .Work-Information{
+        width: 100%;
+        font-size: calc(10px + 0.390625vw);
+        padding: 10px 10px 10px 20px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .MyName{
+        font-size: calc(8px + 0.390625vw);
+        margin-left: 0px;
+    }
+    .ProfilePic{
+        /* visibility: hidden; */
+        border: 2px solid rgb(197, 105, 0);
+        height: 100%;
+
+    }
+    .ProfilePic-Container{
+        /* visibility: hidden; */
+        height: 60px;
+        padding-bottom: 5px;
+        padding-left: 10px; 
+        align-self: center;
+    }
+    .Contact-Info{
+        align-self: center;
+    }
+    .Languages{
+        visibility: hidden;
+        width: 0px;
+    }
+    .Hobbies{
+        visibility: hidden;
+        width: 0px; 
+    }
+    .Media-Links{
+        visibility: hidden; 
+        width: 0px;
+    }
+    .Reference{
+        visibility: hidden; 
+        width: 0px;
+    }
+    .MyName{
+        padding: 10px;
+    }
+    .Work-Experience{
+        padding: 10px;
+        margin-left: 0px;
+        border-radius: 0%;
+    }
+    .Education{
+        padding: 10px;
+        margin-left: 0px;
+        border-radius: 0%;
+    }
+    .Certifications{
+        padding: 10px;
+    }
+    .Skills{
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .content{
+        min-height: 1250px;
+        min-width: 1200px;
+    }
+}

@@ -1,0 +1,28 @@
+
+.aqua{
+    display: flex;
+    justify-content: center;
+}
+.bisque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blueviolet{
+    display: flex;
+    justify-content: right;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+

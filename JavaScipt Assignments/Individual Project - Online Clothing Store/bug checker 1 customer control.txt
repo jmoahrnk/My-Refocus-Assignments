@@ -1,0 +1,20 @@
+bug checker 1: add, delete, check age for user
+
+// shop.add_user({
+//     first_name: "Chuck",
+//     last_name: "Norris",
+//     username:"chknrs",
+//     password:"qwe123",
+//     birthday: "04.10.1940",
+// });
+// shop.users.forEach(element => {
+//     console.log(element);
+// });
+// shop.delete_user(4)
+// shop.users.forEach(element => {
+//     console.log(element);
+// });
+// console.log(shop.users[0].age());
+// console.log(shop.users[1].age());
+// console.log(shop.users[2].age());
+// console.log(shop.users[3].age());
